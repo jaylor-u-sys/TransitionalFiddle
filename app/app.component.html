@@ -1,0 +1,8 @@
+<button (click) = "ChangeBox()">Bring it in</button><br>
+<expanded-card [showBox]="showDatBoxYo" [tabs]="theTabs" (onDismiss)="onDismiss($event)">
+  <div card-header>The Card</div>
+</expanded-card>
+<button (click) = "ChangeOtherBox()">Bring the other in</button><br>
+<expanded-card [showBox]="showTheOtherBox" [tabs]="theOtherTabs" (onDismiss)="onOtherDismiss($event)">
+  <div card-header>The Other Card</div>
+</expanded-card>

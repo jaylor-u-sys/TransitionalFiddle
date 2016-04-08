@@ -1,0 +1,4 @@
+<div [class]="showBox ? 'masterCard show' : 'masterCard hidden'" >
+  <span><ng-content select="[card-header]"></ng-content></span>
+  <span class="hugtheleft"><button class="hugtheleft" (click) = "hideBox()" class="closeButton">X</button></span>
+</div>

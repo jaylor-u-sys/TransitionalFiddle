@@ -1,0 +1,7 @@
+node_modules/*
+typings/*
+*.js
+*.js.map
+*.css
+*.log
+Thumbs.db

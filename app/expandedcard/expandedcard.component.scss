@@ -1,0 +1,32 @@
+$card-width: 840;
+$card-height: 750;
+$card-width-px: #{$card-width}px;
+$half-card-width-px: #{$card-width/2}px;
+$card-height-px: #{$card-height}px;
+
+.closeButton{
+  background-color: navy;
+  color:white;
+}
+.masterCard {
+  height: $card-height;
+  width: $card-width-px;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  transition: all 1s linear;
+  background-color: lightblue;
+}
+.masterCard.hidden {
+  left: calc(0% - #{$card-width-px});
+  top: 10px;
+  overflow: hidden;
+}
+.masterCard.show {
+  left: calc(50% - #{$half-card-width-px});
+  top: 10px;
+}
+
+.hugtheleft {
+  left:100%;
+}
