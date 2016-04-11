@@ -2,7 +2,7 @@
   "name": "TransitionalFiddle",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run sass:w\" \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "tsc && node-sass app/ -o app/ && node-sass app/* -o app/* && concurrently \"npm run sass:w\" \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "sass": "node-sass app/ -o app/ && node-sass app/* -o app/*",
